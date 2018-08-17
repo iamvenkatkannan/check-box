@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sirva</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--<link href="css/style.css" rel="stylesheet">-->
+
+        <style>
+
+            .check_box {display: inline-block;position: relative;padding-left: 35px;margin-top: 10px;
+                        margin-bottom: 12px;margin-right: 20px;cursor: pointer;font-size: 14px;
+                        -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;
+                        user-select: none;font-weight: 600;}
+            .check_box input {position: absolute;opacity: 0;cursor: pointer;}
+            .checkmark {position: absolute;top: 0;left: 0;height: 20px;width: 20px;background-color: #eee;}
+            .check_box:hover input ~ .checkmark {background-color: #ccc;}
+            .check_box input:checked ~ .checkmark {background: #ef4876}
+            .checkmark:after {content: "";position: absolute;display: none;}
+            .check_box input:checked ~ .checkmark:after {display: block;}
+            .check_box .checkmark:after {left: 8px;top: 4px;width: 5px;height: 10px;
+                                         border: solid white;border-width: 0 3px 3px 0;
+                                         -webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
+
+        </style>
+    </head>
+    <body>
+
+
+        <form style="padding: 25px 50px;">
+            <div class="form-group align_input col-sm-6 col-xs-12">   
+                <div class="row">
+                    <label>Check box<span>*</span></label>
+                    <div class="check-box-wrapper">
+                        <label class="check_box">Moving
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="check_box">Relocation
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--<script src="js/custom.js"></script>-->
+    </body>
+</html>
